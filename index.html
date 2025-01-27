@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gideon's Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+  (function(){
+  emailjs.init({
+    publicKey: "0X2SU3Hg7Lf60HEJO",
+  });
+  })();
+  </script>
+  <script src="script.js"></script>
+
+  <style>
+    /* Smooth scrolling for anchor links */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-gray-800 text-white fixed w-full z-10">
+    <div class="container mx-auto flex justify-between items-center py-4 px-6">
+      <h1 class="text-xl font-bold">Gideon Macharia</h1>
+      <nav>
+        <ul class="flex space-x-6">
+          <li><a href="#about" class="hover:text-yellow-400">About</a></li>
+          <li><a href="#projects" class="hover:text-yellow-400">Projects</a></li>
+          <li><a href="#contact" class="hover:text-yellow-400">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="h-screen bg-gradient-to-r from-blue-500 to-indigo-600 text-white flex items-center justify-center" id="hero">
+    <div class="text-center">
+      <h2 class="text-4xl md:text-6xl font-bold">Hi, I'm Gideon!</h2>
+      <p class="mt-4 text-lg md:text-xl">A passionate software engineer building amazing things for the web.</p>
+      <a href="#contact" class="mt-6 inline-block bg-yellow-400 text-gray-800 font-semibold px-6 py-3 rounded-lg hover:bg-yellow-500">Get in Touch</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="container mx-auto py-16 px-6" id="about">
+    <h2 class="text-3xl font-bold text-center mb-8">About Me</h2>
+    <p class="text-lg text-center max-w-3xl mx-auto">
+      I'm a software engineer with a passion for building user-friendly applications. I specialize in modern web development technologies like React, Tailwind CSS, Python, and Flask. I love learning new tools and solving challenging problems.
+    </p>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="bg-gray-200 py-16" id="projects">
+    <div class="container mx-auto px-6">
+      <h2 class="text-3xl font-bold text-center mb-8">My Projects</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <!-- Project Card -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAAclBMVEVHcEz///////////////////////////////////////////////////////////8AAE0uSnexusmXo7Z8jKSPnLH59ff/5ObtHkHt8PREWoDxXnLd4ujK0NpZbY4AKWLtEDoAFlkTN2rvPljsADP8zNJlZBH+AAAAD3RSTlMAIRtRpeyUF47hyMpPTpWf0r64AAABh0lEQVQ4jW1Ti5aCIBClTEutHZ4+WNSj1v//4gIDSG3Xc1SGy9x5QciBR9WWAGVTFeQLzhfwMP59uX7u33Abxjn83N62r7U38hEE42Amt6gzJ6dwijMYF+goysApnYeIWS/rpkVcRh91IgCXoKe0qo/4BAtY7IPQMVIvoKhQwkMJ5SD05uxnS/D5C2ozdOig84CZ+XpYAmrTUVEH2T+H53MYgGFBCCn8d6JGUMXlKvvh9/Xad6DSbzxIhQWmk6CTdeQIAPveUUy2Ig1mRBV0kAiddYnZtqREgmYYChJc1J23lyTURHnDQcADLsrwNZTnhBiCJQQJWOacwGPDStImjTEjsKjQhDRtHW0eiTB5QYcfco+tk2uXCNgIh4LEKK0LGQmHA4jNwtRNICw62lyzznEBbBs326zX7OJFXPOBhnHVwPteHQK3j5EzdHZKaSbrf0M7rUy6dHOBfOzt8ZWmAI+xTxfH1pObWMP6/faFSI1W/C2+zAnWQ6DC5fztghdV465/W90z4x8umDdTFqIcTQAAAABJRU5ErkJggg==" alt="logo" alt="Project 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Project 1</h3>
+            <p>A description of your awesome project goes here.</p>
+          </div>
+        </div>
+
+        <!-- Repeat Project Card for additional projects -->
+        <div class="bg-white rounded-lg shadow-md overflow-hidden">
+          <img src="https://via.placeholder.com/400" alt="Project 2" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-bold mb-2">Project 2</h3>
+            <p>A description of another amazing project goes here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="container mx-auto py-16 px-6" id="contact">
+    <h2 class="text-3xl font-bold text-center mb-8">Contact Me</h2>
+    <form class="max-w-lg mx-auto bg-white p-6 rounded-lg shadow-md" id="contactForm">
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-bold mb-2">Subject</label>
+        <input type="subject" id="subject" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+      </div>
+      <div class="mb-4">
+        <label for="name" class="block text-sm font-bold mb-2">Name</label>
+        <input type="text" id="name" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-sm font-bold mb-2">Email</label>
+        <input type="email" id="email" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-sm font-bold mb-2">Message</label>
+        <textarea id="message" rows="4" class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" required></textarea>
+      </div>
+      <button type="submit" class="w-full bg-blue-500 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-600" onclick="sendEmail()">Send</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto text-center">
+      <p>&copy; 2025 Gideon Macharia. All rights reserved.</p>
+    </div>
+  </footer>
+
+  
+</body>
+</html>
